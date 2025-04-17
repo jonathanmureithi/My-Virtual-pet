@@ -17,3 +17,6 @@ This project is designed to implement a **Pet class** in Python. The goal is to 
 3. Training allows the pet to learn tricks dynamically.
 4. The `get_status()` method displays the pet’s condition.
 5. The `show_tricks()` method lists learned tricks.
+I had to import random because the train() method uses random.choice([True, False]). This function randomly picks either True or False, simulating the chance that my pet successfully learns a new trick or fails and needs more practice.
+
+Without import random, Python wouldn't recognize the random.choice() function, and my code would produce an error.
